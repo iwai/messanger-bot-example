@@ -10,7 +10,7 @@ $app->get('/callback', function (Request $request) use ($app) {
   if ($request->getQueryString()['hub.verify_token'] == getenv('VALIDATION_TOKEN')) {
     return new Response($request->getQueryString()['hub.challenge'], 200);
   }
-  return new Response('Error, wrong validation token', 500);
+  return new Response('Error, wrong validation token'.$request->getQueryString(), 500);
 });
 
 $app->run();
