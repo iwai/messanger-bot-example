@@ -1,6 +1,12 @@
 {
-  "name": "PHP Getting Started",
-  "description": "A barebones PHP app that makes use of the Silex web framework",
-  "repository": "https://github.com/heroku/php-getting-started",
-  "addons": []
+  "name": "messenger-bot",
+  "description": "Example for Facebook Messanger Bot",
+  "repository": "https://github.com/iwai/messanger-bot-example.git",
+  "keywords": ["Messanger", "Bot"],
+  "addons": [],
+  "env": {
+    "VALIDATION_TOKEN": {
+      "description": "Messanger Token"
+    }
+  }
 }
